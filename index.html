@@ -1,21 +1,47 @@
 <!DOCTYPE html>
- <html lang="pt-br"> <!-- lingua do arquivo, mudamos para português -->
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styde.css"> <!-- tag para adicionar o arquivo CSS, o nome desse arquivo tem que ser mencionado nos comandos rel="" e href="" -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>AluraBooks</title>
 </head>
+
 <body>
-    <header class="cabecalho"> <!-- tag class paa organizar os elementos, nomear cada um e poder fazer configurações específicas -->
-    <img class="cabecalho-imagem" src="./img/R.png" alt="informacao sobre a imagem"> 
-    <ul class="cabecalho-lista-item"> 
-        <li class="cabecalho-lista-item">Frutas</li> 
-        <li class="cabecalho-lista-item">Tomate</li>
-    </ul>
-</header>
-    <h1>esse e um titulo</h1> <!-- tg para criar um título, caso precise criar subtítulos usar a tag h2, h3 e assim por diante -->
-    <p>esse e um paragrafo </p> <!-- tag para criar um parágrafo e adicionar textos -->
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="# " class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="./img/Logo (1).svg" alt="Logo do AluraBooks">
+        </div>
+        <div class="container">
+            <a href="#"><img src="./img/Favoritos (1).svg" alt="Meus Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./img/Sacola.svg" alt="Carinho de Compras" class="container__imagem"></a>
+            <a href="#"><img src="./img/Usuario.svg" alt="Menu do Usuario" class="container__imagem"></a>
+        </div>
+    </header>
 </body>
+
 </html>
